@@ -34,11 +34,22 @@ Model dilatih menggunakan akselerator GPU (NVIDIA Tesla T4 di Kaggle) dengan kon
 * **Batch Size:** 16
 * **Waktu Konvergensi:** ~13 Menit
 
-## Hasil Evaluasi (mAP & Metrics)
+## 📈 Hasil Evaluasi (mAP & Metrics)
 Berdasarkan agregasi metrik iterasi terminal (50 Epochs):
 * Model mencapai akurasi lokalisasi dasar (**mAP@50**) yang nyaris sempurna di angka **98.9%**.
 * Presisi kotak ketat (**mAP@50-95**) mencapai **78.4%**.
-* Analisis *Confusion Matrix* menunjukkan arsitektur sangat ahli membedakan kelas cacat, meskipun masih terdapat ruang optimasi pada *False Positives* di area latar belakang bersih.
+
+### 1. Visualisasi Prediksi (Bounding Box)
+![Validation Predictions](images/val_batch0_pred.jpg)
+*Gambar: Hasil deteksi anomali mikroskopis beserta tingkat keyakinan (confidence score) pada data validasi.*
+
+### 2. Confusion Matrix
+![Confusion Matrix Normalized](images/confusion_matrix_normalized.png)
+*Gambar: Matriks evaluasi yang menunjukkan tingginya akurasi model dalam mengklasifikasikan jenis cacat secara presisi.*
+
+### 3. Kurva Pelatihan (Loss & mAP)
+![Training Results](images/results.png)
+*Gambar: Grafik konvergensi model selama 50 epoch yang menunjukkan penurunan tingkat error dan peningkatan akurasi secara konsisten.*
 
 ## 🛠️ Cara Penggunaan (How to Run)
 1. *Clone repository* ini:
