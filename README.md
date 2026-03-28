@@ -14,7 +14,7 @@ Proyek ini adalah implementasi *end-to-end Machine Learning pipeline* menggunaka
 1. **Bipartite Graph & Negative Mining:** Pemetaan otomatis gambar cacat (positif) dan gambar background bersih (negatif) untuk melatih model mengenali *noise* dan mengurangi *False Positives*.
 2. **Exploratory Data Analysis (EDA):** Visualisasi ekstraktif berbasis kelas untuk inspeksi *bounding box* secara langsung sebelum pelatihan.
 3. **Safe YOLO Format Conversion:** Standardisasi domain gambar menjadi *Grayscale 3-Channel* dan konversi koordinat absolut ke koordinat relatif YOLO secara aman.
-4. **Evaluasi Halusinasi Model:** Skrip analisis visual khusus untuk membandingkan fakta (*Ground Truth*) dengan halusinasi/prediksi salah pada area *background*.
+4. **Hasil Evaluasi (mAP & Metrics):** Skrip analisis visual khusus untuk membandingkan fakta (*Ground Truth*) dengan halusinasi/prediksi salah pada area *background*.
 
 ## Dataset
 Dataset yang digunakan adalah subset **DeepPCB**, yang memuat pasangan gambar PCB berkualitas tinggi (resolusi asli di-*resize* ke 640x640). 
@@ -34,7 +34,7 @@ Model dilatih menggunakan akselerator GPU (NVIDIA Tesla T4 di Kaggle) dengan kon
 * **Batch Size:** 16
 * **Waktu Konvergensi:** ~13 Menit
 
-## 📈 Hasil Evaluasi (mAP & Metrics)
+## Hasil Evaluasi (mAP & Metrics)
 Berdasarkan agregasi metrik iterasi terminal (50 Epochs):
 * Model mencapai akurasi lokalisasi dasar (**mAP@50**) yang nyaris sempurna di angka **98.9%**.
 * Presisi kotak ketat (**mAP@50-95**) mencapai **78.4%**.
