@@ -51,7 +51,7 @@ Berdasarkan agregasi metrik iterasi terminal (50 Epochs):
 ![Training Results](images/results.png)
 *Gambar: Grafik konvergensi model selama 50 epoch yang menunjukkan penurunan tingkat error dan peningkatan akurasi secara konsisten.*
 
-## 🛠️ Cara Penggunaan (How to Run)
+## Cara Penggunaan (How to Run)
 1. *Clone repository* ini:
    ```bash
    git clone [https://github.com/stephrs/DeepPCB-Defect-Detection-YOLOv8](https://github.com/stephrs/DeepPCB-Defect-Detection-YOLOv8/edit/main/README.md)
