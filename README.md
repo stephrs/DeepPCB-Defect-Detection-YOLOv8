@@ -16,6 +16,11 @@ Proyek ini adalah implementasi *end-to-end Machine Learning pipeline* menggunaka
 3. **Safe YOLO Format Conversion:** Standardisasi domain gambar menjadi *Grayscale 3-Channel* dan konversi koordinat absolut ke koordinat relatif YOLO secara aman.
 4. **Evaluasi Halusinasi Model:** Skrip analisis visual khusus untuk membandingkan fakta (*Ground Truth*) dengan halusinasi/prediksi salah pada area *background*.
 
+## Arsitektur Model YOLO
+![Generic YOLO Architecture](images/yolo_generic_architecture.jpg)
+
+*Gambar: Diagram umum arsitektur YOLO (Input -> Backbone -> Neck -> Head) yang menjadi fondasi teknologi dalam proyek ini. Meskipun proyek ini mengimplementasikan YOLOv8, diagram di atas secara akurat menggambarkan alur kerja fundamental model dalam mengekstraksi fitur dan melakukan Dense Prediction.*
+
 ## Dataset
 Dataset yang digunakan adalah subset **DeepPCB**, yang memuat pasangan gambar PCB berkualitas tinggi (resolusi asli di-*resize* ke 640x640). 
 Model mendeteksi 6 kelas cacat:
