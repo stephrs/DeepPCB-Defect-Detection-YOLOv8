@@ -54,7 +54,7 @@ Berdasarkan agregasi metrik iterasi terminal (50 Epochs):
 ## Cara Penggunaan (How to Run)
 1. *Clone repository* ini:
    ```bash
-   git clone [https://github.com/stephrs/DeepPCB-Defect-Detection-YOLOv8](https://github.com/stephrs/DeepPCB-Defect-Detection-YOLOv8/edit/main/README.md)
+   git clone https://github.com/stephrs/DeepPCB-Defect-Detection-YOLOv8.git
 2. Instal pustaka yang dibutuhkan:
    ```bash
    pip install ultralytics opencv-python-headless matplotlib pandas scikit-learn
